@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Akshit</title>
+    <link rel="stylesheet" href="externalcss.css">
+    <style> 
+      #animated_div {
+      width:110px;
+      height:47px;
+      background: #92B901;
+      color: #ffffff;
+      position: relative;
+      font-weight:bold;
+      font-size:20px;
+      padding:10px;
+      animation:animated_div 5s 1;
+      -moz-animation:animated_div 5s 1;
+      -webkit-animation:animated_div 5s 1;
+      -o-animation:animated_div 5s 1;
+      border-radius:5px;
+      -webkit-border-radius:5px;
+      }
+
+      @keyframes animated_div
+      {
+      0% {transform: rotate(0deg);left:0px;}
+      25% {transform: rotate(20deg);left:0px;}
+      50% {transform: rotate(0deg);left:500px;}
+      55% {transform: rotate(0deg);left:500px;}
+      70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+      100% {transform: rotate(-360deg);left:0px;}
+      }
+
+      @-webkit-keyframes animated_div
+      {
+      0% {-webkit-transform: rotate(0deg);left:0px;}
+      25% {-webkit-transform: rotate(20deg);left:0px;}
+      50% {-webkit-transform: rotate(0deg);left:500px;}
+      55% {-webkit-transform: rotate(0deg);left:500px;}
+      70% {-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+      100% {-webkit-transform: rotate(-360deg);left:0px;}
+      }
+
+      @-moz-keyframes animated_div
+      {
+      0%  {-moz-transform: rotate(0deg);left:0px;}
+      25% {-moz-transform: rotate(20deg);left:0px;}
+      50%  {-moz-transform: rotate(0deg);left:500px;}
+      55%  {-moz-transform: rotate(0deg);left:500px;}
+      70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+      100% {-moz-transform: rotate(-360deg);left:0px;}
+      }
+
+      @-o-keyframes animated_div
+      {
+      0% {transform: rotate(0deg);left:0px;}
+      25% {transform: rotate(20deg);left:0px;}
+      50%  {transform: rotate(0deg);left:500px;}
+      55%  {transform: rotate(0deg);left:500px;}
+      70%  {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+      100% {transform: rotate(-360deg);left:0px;}
+      }
+    </style>
+  </head>
+  <body>
+  <h1><center>Author of the week</center></h1>
+
+  <br><br><br>
+<div id="animated_div">Genere</div>
+  <br><br><br>
+  <br>
+    <br>
+    <img src="biography.jpeg" alt="" hspace='20' height="180" style="width: 20%">
+    <img src="fiction.jpeg" alt="" hspace='20' height="180" style="width: 20%">
+    <img src="thriller.jpeg" alt="" hspace='20' height="180" style="width: 20%">
+    <img src="romantic.jpeg" alt="" hspace='20' height="180" style="width: 20%">
+<br>
+<br>
+<a href="firstpage.html"><button type="button" style="width:100px;height:30px;margin-left:7%;background-color: #4CAF50;font-size: small;"><span>Biography</span></button></a>
+<a href="fiction.html"><button type="button" style="width:100px;height:30px ;margin-left:15%;background-color: red;font-size: small;"><span>Fiction</span></button>
+<a href="thriller.html"><button type="button" style="width:100px;height:30px; margin-left:18%;background-color: blue;font-size: small;"><span>Thriller</span></button>
+<a href="romantic.html"><button type="button" style="width:100px;height:30px;margin-left:15%;background-color: white;font-size: small;"><span>Romantic</span></button>
+ <center></center><br><br> Previous decade bests:<br>
+  <ol>
+    <li>Kite Runner</li>
+    <li>Harry Potter</li>
+    <li>Inferno</li>
+  </ol>
+</center>
+  <br>
+  our links:
+  <ul>
+    <li><a href="https://www.facebook.com/">facebook</a></li>
+    <li><a href="https://twitter.com/">twitter</a></li>
+    <li><a href="https://www.instagram.com/">instagram</a></li>
+  </ul>
+  <center>
+   <nav> 
+     <a href="akshit.html">Home</a>
+     <a href="fiction.html">Fiction</a>
+     <a href="thriller.html">Thriller</a>
+     <a href="firstpage.html">Biography</a>
+     <a href="romantic.html">Romantic</a>
+    
+   </nav>
+    </center>
+    <p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+  </body>
+</html>
